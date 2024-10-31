@@ -25,6 +25,8 @@ public class MultiplicationTable : MonoBehaviour
         {
             Debug.Log(5+"*"+i+"="+i*5);
         }
+        Debug.Log("the result is = "+Multiply(2,10));
+        
         
     }
 }
