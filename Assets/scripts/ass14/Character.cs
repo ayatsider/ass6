@@ -5,11 +5,15 @@ using UnityEngine;
 
 public class Character
 {
-    // public Character(string name, int health)
-    // {
-    //     playerName = name;
-    //     playerHealth = health;
-    // }
+    public Character(string name, int health)
+    {
+        playerName = name;
+        playerHealth = health;
+    }
+    public Character():this("",100)
+    {
+        
+    }
 
     private string playerName = "Subhi";
     public string playerNamee
