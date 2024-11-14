@@ -11,6 +11,10 @@ namespace Assignment18
         {
 
         }
+        public Officer() : base()
+        {
+
+        }
         public override void DisplayInfo()
         {
             Debug.Log("Officer");

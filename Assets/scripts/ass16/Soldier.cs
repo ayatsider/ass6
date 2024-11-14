@@ -8,7 +8,9 @@ namespace Assignment18
     {
         public Soldier(string name, int health, Position pos) : base(name, health, pos)
         {
-
+        }
+        public Soldier() : base()
+        {
         }
         public override void DisplayInfo()
         {
