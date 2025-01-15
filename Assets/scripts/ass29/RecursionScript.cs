@@ -42,11 +42,5 @@ namespace Assignment29
             }
             return sum;
         }
-
-
-        void Update()
-        {
-
-        }
     }
 }
