@@ -14,16 +14,17 @@ namespace Assignment29
             }
             return result;
 
+
         }
-        // public static void RepeatString(int num,string word)
-        // {
-        //     string res="";
-        //     for(int i=0;i<num;i++)
-        //     {
-        //         res+=word;   
-        //     }
-        //     Debug.Log(res);
-        // }
+        public static string RepeatString(this string word, int num)
+        {
+            string res = "";
+            for (int i = 0; i < num; i++)
+            {
+                res += word;
+            }
+            return res;
+        }
 
     }
 }
