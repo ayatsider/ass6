@@ -4,20 +4,25 @@ using UnityEngine;
 using UnityEngine.Events;
 namespace Assignment35
 {
-public class UnityEventExample : MonoBehaviour
-{
-    public UnityEvent onEventTriggered;
-    void Start()
+    public class UnityEventExample : MonoBehaviour
     {
-        onEventTriggered = new UnityEvent();
-        //onEventTriggered.AddListener();
-        
-    }
+        public UnityEvent onEventTriggered;
+        void Start()
+        {
+            onEventTriggered = new UnityEvent();
+            onEventTriggered.AddListener(OnEventResponse);
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        }
+        public void OnEventResponse()
+        {
+            Debug.Log("The event has beentriggered!");
+        }
+        void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                onEventTriggered.Invoke();
+            }
+        }
     }
-}
 }
